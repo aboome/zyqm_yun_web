@@ -1,0 +1,128 @@
+.qmy_banner_on,.six_pros，.pro_data{
+    min-width: 1000px;
+}
+
+
+.qmy_banner_on{
+    position: relative;
+    top:-21px;
+    vertical-align: middle;
+}
+.qmy_banner_on>img{
+    width:100%;
+}
+
+/*功能模块*/
+.six_pros>ul>li{
+    display: inline;
+    height:95px;
+    float: left;
+    width:16%;
+    border:1px solid #C1C2C0;
+    margin:0.8% 0.3% 3% 0.3%;
+    overflow: hidden;
+}
+.six_pros>ul>li>a{
+    display: inline-block;
+    width:100%;
+    height:95px;
+    line-height: 95px;
+    text-decoration: none;
+
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.six_pros>ul>li>a>p{
+    height:95px;
+    line-height: 95px;
+    float: left;
+    width:18%;
+    margin: 0 4% 0 4%;
+}
+.six_pros>ul>li>a>p>img{
+    width:100%;
+}
+.six_pros>ul>li>a>span{
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #848582;
+}
+/*@media and(min-width: 1000px) and(max-width: 1200px){
+    .six_pros>ul>li>a>span{
+        display: inline-block;
+        font-size: 1.6rem;
+        color: #848582;
+    }
+}*/
+
+
+
+/*功能信息*/
+.pro_data_bg1{
+    background: #F3F6F8;
+}
+.pro_data_bg2{
+    background: #FFFFFF;
+}
+
+
+.pro_data{
+    padding:60px 0 100px 0;
+}
+.pro_data>h3,.data_intro>p{
+    font-weight: bold;
+    color: #627478;
+    text-align: center;
+}
+.pro_data>h3{
+    font-size: 2.6rem;
+    padding-bottom:20px;
+}
+.pro_data>.data_intro{
+    font-size: 1.8rem;
+    padding-bottom:20px;
+}
+.pro_data>.data_intro>p{
+    font-size: 1.8rem;
+}
+.pro_data .info_list{
+    width:66%;
+    margin:0 auto;
+}
+.pro_data .info_list .data_info{
+   padding-left: 23%;
+    padding-bottom: 100px;
+
+}
+.pro_data .info_list .data_info>li{
+    list-style: disc;
+    color: #AFA4A4;
+}
+.pro_data .info_list .cooperation{
+    margin:0 auto;
+}
+.pro_data .info_list .cooperation>li{
+    float: left;
+    width:16%;
+    margin:0 0.33% 0 0.33%;
+}
+.pro_data .info_list .cooperation>li>a{
+
+}
+.pro_data .info_list .cooperation>li>a>img{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

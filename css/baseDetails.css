@@ -1,0 +1,186 @@
+.tb{
+    border: 1px solid #D0D0CF;
+    overflow: hidden;
+    margin-top:15px;
+    margin-bottom:25px;
+}
+/*商品展示页的样式*/
+.ad{
+    height:200px;
+}
+.ad>img{
+    width:100%;
+    height:200px;
+    position: absolute;
+    top:0px;
+    left:0;
+}
+
+
+/* 基地图片 */
+/*.box_margin{
+    margin-top:15px;
+    margin-bottom:25px;
+}*/
+.base{
+    padding:12px;
+   }
+.base_box{
+    width:312px;
+}
+.qm-pic a{
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+}
+.qm-pic a img{
+    vertical-align:middle;
+}
+.qm-thumb{
+    margin:10px 0 0;
+    overflow:hidden;
+}
+.qm-thumb li{
+    background:none repeat scroll 0 0 transparent;
+    float:left;
+    height:44px;
+    margin:0 6px 0 0;
+    overflow:hidden;
+    padding:1px;
+}
+.qm-s310, .qm-s310 a{
+    width:312px;
+    height:312px;
+    overflow:hidden;
+}
+.qm-s310, .qm-s310 img{
+    max-width:312px;
+    max-height:312px;
+}
+.qm-s40, .qm-s40 a{
+    width:42px;
+    height:42px;
+}
+.qm-s40, .qm-s40 a img{
+    width:100%;
+}
+.qm-booth{
+    border:1px solid #CDCDCD;
+    position:relative;
+    z-index:1;
+}
+.qm-thumb .qm-selected{
+    background:none repeat scroll 0 0 #529202;
+    height:46px;
+    padding:2px;
+}
+.qm-thumb .qm-selected div{
+    background-color:#FFFFFF;
+    border:medium none;
+}
+.qm-thumb li div{
+    border:1px solid #CDCDCD;
+}
+div.zoomDiv{
+    z-index:999;
+    position:absolute;
+    top:0;
+    left:0;
+    width:200px;
+    height:200px;
+    background:#ffffff;
+    border:1px solid #CCCCCC;
+    display:none;
+    text-align:center;
+    overflow:hidden;
+}
+div.zoomMask{
+    position:absolute;
+    background:url("../images/company_pic/mask.png") repeat scroll 0 0 transparent;
+    cursor:move;
+    z-index:1;
+}
+
+/*基地信息*/
+.base_info{
+    width:60%;
+    position: relative;
+    left:40px;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+    color: #575856;
+}
+.base_info h3{
+    font-size: 3rem;
+}
+.base_info ul{
+    background: #F7FBF2;
+    margin: 5px 0;
+}
+.base_info ul li{
+    padding:5px 0 5px 10px;
+    font-size: 1.6rem;
+}
+.base_info ul li span{
+    color: #888A85;
+}
+.bg-w{
+    background: #ffffff;
+}
+.base_info ul li:last-child{
+    border-top: 1px dashed #E5E5E5;
+}
+.base_info ul li img{
+    width:10%;
+    margin-right: 10px;
+}
+
+
+/*主营产品、公司简介公用*/
+.tb h5{
+    background: #F7FBF3;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #575856;
+    height:50px;
+    padding-left: 30px;
+    line-height: 50px;
+}
+/*主营产品*/
+.main_pro h5 span{
+    color: #61AE01;
+}
+.main_pro ul li{
+    margin:0 2% 0 2%;
+    padding:2% 1% 2% 1%;
+    float: left;
+    width:16%;
+
+}
+.main_pro ul li img{
+    width:100%;
+}
+.main_pro ul li p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: #529202;
+}
+
+/*公司简介*/
+.company_intro{
+    margin-bottom: 100px;
+}
+.intro_content{
+    padding: 30px;
+}
+.intro_content p{
+    font-size: 1.6rem;
+    color: #A8AAA7;
+    text-indent: 2em;
+    line-height: 1.8em;
+}
+.intro_content p span{
+    font-weight: bold;
+}

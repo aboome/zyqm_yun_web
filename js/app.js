@@ -36,4 +36,14 @@ $(function(){
         pauseControls: true,
         namespace: "callbacks"
     });
+
+
+    //基地详情页效果图
+    $(".jqzoom").imagezoom();
+
+    $("#thumblist li a").click(function(){
+        $(this).parents("li").addClass("qm-selected").siblings().removeClass("qm-selected");
+        $(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+        $(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+    });
 });

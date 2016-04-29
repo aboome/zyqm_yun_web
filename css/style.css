@@ -4,18 +4,24 @@ a{text-decoration: none;}
 .fix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
 .dn{display: none;}
 
+body{
+    min-width: 100%;
+}
+
 .wrap{
-    width:1200px;
+    width:100%;
     margin: 0 auto;
+    position: relative;
 }
 
 /*回到首页，回到顶部，联系我们*/
 .back{
-    width: 30px;
+    width: 5%;
+    min-width: 80px;
     position:fixed;
     display:none;
     bottom:100px;
-    right:10%;
+    right:0;
     z-index: 10000;
 }
 .backTop{
@@ -36,8 +42,14 @@ a{text-decoration: none;}
 .contactUs:hover{
     background:#A987FC;
 }
+
+
+
+.wrap_header,.footer{
+    min-width: 1000px;
+}
 .back>ul>li{
-    padding: 5px 0 5px 0;
+    padding: 10px 5px 10px 5px;
 
     -moz-transition:background 1s;
     -webkit-transition:background 1s;
@@ -49,19 +61,22 @@ a{text-decoration: none;}
     color: #FFFFFF;
     line-height: 1.2em;
     display: block;
-    width: 30px;
+    width: 100%;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2rem;
 
     -moz-transition:color 1s;
     -webkit-transition:color 1s;
     -o-transition:color 1s;
 }
+.back>ul>li>a>img{
+    width:50px;
+}
 .back>ul>li>a>span{
     display: block;
-    width: 30px;
+    width: 100%;
     text-align: center;
-    padding-top: 1px;
+    padding-top: 3px;
 }
 
 
@@ -69,23 +84,25 @@ a{text-decoration: none;}
 
 
 .wrap_header{
-    width:100%;
-    height:83px;
+    /*width:100%;*/
+    height:88px;
 }
 .top1{
+    width:100%;
     height:33px;
     background: #529202;
     color: #D8E8C8;
 }
+
 .welcome{
-    padding:6px 0 6px 100px;
+    padding:6px 0 6px 0;
 }
 .welcome>span{
     padding-right:16px;
 }
 
 .website{
-    padding:6px 90px 6px 0;
+    padding:6px 0 6px 0;
 }
 .website>a{
     color: #D8E8C8;
@@ -93,14 +110,14 @@ a{text-decoration: none;}
     padding:0 10px 0 5px;
 }
 .top2{
-    height:50px;
+    height:55px;
     background: #61AE01;
     font-size: 20px;
 }
 .logo{
-    height:50px;
+    height:55px;
     line-height: 50px;
-    margin-left: 100px;
+    margin-left: 0;
 }
 .logo>a{
     float: left;
@@ -119,19 +136,20 @@ a{text-decoration: none;}
     font-size: 14px;
 }
 .navbar{
-    margin-left: 140px;
+    margin-left: 40px;
     margin-top: -1px;
 }
 .navbar>li{
     float: left;
+
 }
 .navbar>li>a{
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #FFFFFF;
     text-decoration: none;
     display: inline-block;
-    height:50px;
-    line-height:50px;
+    height:55px;
+    line-height:55px;
     padding:0 24px 0 24px;
 }
 .navbar>li:hover{
@@ -143,12 +161,16 @@ a{text-decoration: none;}
 
 /*****轮播图*****/
 .slider_list{
-    width:1000px;
-    height:300px;
     margin:0 auto;
     overflow: hidden;
     position: relative;
     top:-21px;
+}
+.slider>li{
+    width:100%;
+}
+.slider>li>a>img{
+    width:100%;
 }
 
 /*向左向右*/
@@ -186,9 +208,9 @@ a{text-decoration: none;}
 .callbacks_tabs.callbacks1_tabs{
     width:60px;
     position:relative;
-    z-index:100;
+    z-index:1000;
     margin:0 auto;
-    top:-30px;
+    top:-25px;
 }
 .callbacks_tabs.callbacks1_tabs li{
     display:inline-block;
@@ -218,48 +240,33 @@ a{text-decoration: none;}
 }
 
 /*分隔的禾苗*/
+.divide>img{
+    width:100%;
+    padding-bottom: 50px;
+}
 
-.divide>ul>li{
-    float: left;
-    height:36px;
-}
-.rice{
-    width:37%;
-    padding-top: 10px;
-}
-.divide>ul>li>h4{
-    /*font-family: 黑体;*/
-    font-size: 24px;
-    color: #61AE01;
-    padding:0 10px 0 10px;
-}
 
 /*产品*/
-
-.products h5{
-    font-size: 20px;
-    color: #B0D680;
-    text-align: center;
-    padding-bottom: 31px;
-}
 .pro_list{
-    padding-left: 10px;
+    padding-left: 4%;
 }
 .pro_list>li{
-    height:132px;
+    width:16%;
     float: left;
-    padding:0 32px 0 32px;
+    padding:0 22px 0 22px;
     position: relative;
 }
 .pro_list>li>a{
+    width:100%;
     display: block;
-   /* overflow: hidden;*/
-    width:100px;
     text-decoration: none;
     color: #82858C;
 }
+.pro_list>li>a>img{
+    width:100%;
+}
 .pro_list>li>a>p{
-    width: 166px;
+    width: 100%;
     font-size: 18px;
     text-align: center;
     padding-top: 5px;
@@ -270,12 +277,12 @@ a{text-decoration: none;}
 /*基地*/
 .qb_title{
     text-align: center;
-    padding: 76px 0 50px 0;
+    padding: 110px 0 20px 0;
 }
 .qb_title>span{
     display: block;
     background: #CCCCCC;
-    width:400px;
+    width:40%;
     height:1px;
     position: relative;
     top:25px;
@@ -293,59 +300,60 @@ a{text-decoration: none;}
 
 .quality_base>ul>li{
     float: left;
-    width:200px;
-    height:180px;
+    width:20%;
     border-left: 1px solid #F6F6F6;
     position: relative;
 }
-.quality_base>ul>li:last-child{
-    border-right: 1px solid #F6F6F6;
+.quality_base>ul>li:first-child{
+    border-left-width: 0;
 }
 .quality_base>ul>li>a{
-    display: block;
+        display: block;
     /* overflow: hidden;*/
-    width:120px;
-    padding:20px 0 30px 0;
+    width:100%;
+    height:230px;
+    padding:10% 0 15% 12%;
     margin:0 auto;
     text-decoration: none;
     color: #82858C;
 }
+.quality_base>ul>li>a>img{
+    width:85%;
+    height:94px;
+    margin:0 auto;
+}
 .quality_base>ul>li>a>p{
-    width: 166px;
+    width: 90%;
     font-family: 黑体;
     font-size: 18px;
     margin-top: 30px;
     position: absolute;
-    left:17px;
+    left:7%;
     line-height: 1.2em;
 }
-.quality_base>ul>li>p{
-    width:100%;
-    position: relative;
-    top:45px;
-    left:17px;
-    float: left;
+
+.quality_base .star{
+    padding-top: 40px;
 }
-.quality_base>ul>li>p>span{
+.quality_base .star span{
     display: inline-block;
-    width:90px;
+    padding-bottom: 0;
 }
-.quality_base>ul>li>p>a{
-    display: inline-block;
-    text-decoration: none;
-    color: #82858C;
-    margin-left: 10px;
+.quality_base>ul>li>a>p>img{
+    width:40%;
+    padding-right: 5px;
 }
+
 
 /*地图*/
 .map_title{
     text-align: center;
-    padding: 76px 0 27px 0;
+    padding: 60px 0 27px 0;
 }
 .map_title>span{
     display: block;
     background: #CCCCCC;
-    width:280px;
+    width:32%;
     height:1px;
     position: relative;
     top:25px;
@@ -361,30 +369,60 @@ a{text-decoration: none;}
     font-size: 18px;
 }
 .cn_map{
-    width:600px;
+    width:960px;
     margin:0 auto;
     position: relative;
+    padding-bottom: 30px;
 }
+.cn_map>img{
+    width: 100%;
+}
+.cn_map>p>img{
+    width: 45%;
+    padding-left: 10px;
+}
+
 .cn_map>p>span{
-    display: inline-block;
-    width:10px;
-    height:10px;
-    border-radius: 10px;
-    border:1px solid #799153;
-    background: #FFFFFF;
-    margin-right: 5px;
+    display: block;
+    margin:0 auto;
 }
 
-
-.cn_map .nanjing{
-    position: absolute;
-    top:285px;
-    left:492px;
+.cn_map .sheng_position{
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 黑体;
+    color: #656663;
+    text-align: center;
 }
-.cn_map .beijing{
+.cn_map .jiangsu{
     position: absolute;
-    top:176px;
-    left:445px;
+    top:430px;
+    left:772px;
+}
+.cn_map .shandong{
+    position: absolute;
+    top: 360px;
+    left:725px;
+}
+.cn_map .shanxi{
+    position: absolute;
+    top: 350px;
+    left:620px;
+}
+.cn_map .yunnan{
+    position: absolute;
+    top: 630px;
+    left:420px;
+}
+.cn_map .qinghai{
+    position: absolute;
+    top: 380px;
+    left:330px;
+}
+.cn_map .neimenggu{
+    position: absolute;
+    top: 280px;
+    left:550px;
 }
 
 
@@ -396,21 +434,25 @@ a{text-decoration: none;}
     height:158px;
     background: #5CA702;
 }
-.contact>ul{
-    padding:35px 0 0 100px;
-    float: left;
+.contact>.topAndFooterWidth>ul{
+    width: 600px;
+    padding-top:15px;
 }
-.contact>ul>li{
+.contact>.topAndFooterWidth>ul>li{
     font-size: 18px;
+    height:30px;
 }
 .erweima{
-    width: 100px;
+    width: 110px;
     margin-top: 15px;
-    margin-right: 100px;
     text-align: center;
+}
+.erweima>img{
+    border:5px solid #FFFFFF;
 }
 .erweima>p{
     padding-top: 5px;
+    line-height: 1em;
 }
 .record{
     background: #529102;
@@ -419,9 +461,19 @@ a{text-decoration: none;}
     line-height: 40px;
 }
 
+
 /*各功能部分的层*/
-.divide,.products,.quality_base,.map{
-    width:1000px;
-    margin:0 auto;
+/*
+ * products.html中的类.qmy_ad,.six_pros
+*/
+
+.topAndFooterWidth, .slider_list, .divide, .products, .quality_base, .map, .qmy_banner_on, .six_pros, .pro_data,.tb,.ad {
+    width: 80%;
+    min-width: 1000px;
+    margin: 0 auto;
+    position: relative;
 }
+
+
+
 
